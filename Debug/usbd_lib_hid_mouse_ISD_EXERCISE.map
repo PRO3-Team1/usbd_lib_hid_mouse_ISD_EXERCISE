@@ -2275,7 +2275,7 @@ END GROUP
                 0x20008000                __top_RamPeriph32 = 0x20008000
                 0x20008000                __top_RAM2 = 0x20008000
 
-.text           0x00000000     0x3350
+.text           0x00000000     0x3354
  FILL mask 0xff
                 0x00000000                __vectors_start__ = ABSOLUTE (.)
  *(.isr_vector)
@@ -2284,10 +2284,10 @@ END GROUP
                 0x000000e4                . = ALIGN (0x4)
                 0x000000e4                __section_table_start = .
                 0x000000e4                __data_section_table = .
-                0x000000e4        0x4 LONG 0x3350 LOADADDR (.data)
+                0x000000e4        0x4 LONG 0x3354 LOADADDR (.data)
                 0x000000e8        0x4 LONG 0x10000000 ADDR (.data)
                 0x000000ec        0x4 LONG 0x28 SIZEOF (.data)
-                0x000000f0        0x4 LONG 0x3350 LOADADDR (.data_RAM2)
+                0x000000f0        0x4 LONG 0x3354 LOADADDR (.data_RAM2)
                 0x000000f4        0x4 LONG 0x20000000 ADDR (.data_RAM2)
                 0x000000f8        0x4 LONG 0x0 SIZEOF (.data_RAM2)
                 0x000000fc                __data_section_table_end = .
@@ -2814,76 +2814,76 @@ END GROUP
                 0x000030bc                USB_DeviceDescriptor
  *fill*         0x000030ce        0x2 ff
  .rodata.USB_StringDescriptor
-                0x000030d0       0x76 ./example/src/hid_desc.o
+                0x000030d0       0x7a ./example/src/hid_desc.o
                 0x000030d0                USB_StringDescriptor
- *fill*         0x00003146        0x2 ff
+ *fill*         0x0000314a        0x2 ff
  .rodata.g_usbApi
-                0x00003148       0x20 ./example/src/hid_main.o
+                0x0000314c       0x20 ./example/src/hid_main.o
  .rodata.ledports
-                0x00003168        0x4 C:\Users\Emilie1\Documents\MCUXpressoIDE_10.0.2_411\workspace\lpc_board_ea_devkit_4088\Debug\liblpc_board_ea_devkit_4088.a(board.o)
- .rodata.ledpins
                 0x0000316c        0x4 C:\Users\Emilie1\Documents\MCUXpressoIDE_10.0.2_411\workspace\lpc_board_ea_devkit_4088\Debug\liblpc_board_ea_devkit_4088.a(board.o)
+ .rodata.ledpins
+                0x00003170        0x4 C:\Users\Emilie1\Documents\MCUXpressoIDE_10.0.2_411\workspace\lpc_board_ea_devkit_4088\Debug\liblpc_board_ea_devkit_4088.a(board.o)
  .rodata.portButton
-                0x00003170        0x5 C:\Users\Emilie1\Documents\MCUXpressoIDE_10.0.2_411\workspace\lpc_board_ea_devkit_4088\Debug\liblpc_board_ea_devkit_4088.a(board.o)
- *fill*         0x00003175        0x3 ff
+                0x00003174        0x5 C:\Users\Emilie1\Documents\MCUXpressoIDE_10.0.2_411\workspace\lpc_board_ea_devkit_4088\Debug\liblpc_board_ea_devkit_4088.a(board.o)
+ *fill*         0x00003179        0x3 ff
  .rodata.pinButton
-                0x00003178        0x5 C:\Users\Emilie1\Documents\MCUXpressoIDE_10.0.2_411\workspace\lpc_board_ea_devkit_4088\Debug\liblpc_board_ea_devkit_4088.a(board.o)
- *fill*         0x0000317d        0x3 ff
+                0x0000317c        0x5 C:\Users\Emilie1\Documents\MCUXpressoIDE_10.0.2_411\workspace\lpc_board_ea_devkit_4088\Debug\liblpc_board_ea_devkit_4088.a(board.o)
+ *fill*         0x00003181        0x3 ff
  .rodata.stateButton
-                0x00003180        0x5 C:\Users\Emilie1\Documents\MCUXpressoIDE_10.0.2_411\workspace\lpc_board_ea_devkit_4088\Debug\liblpc_board_ea_devkit_4088.a(board.o)
- *fill*         0x00003185        0x3 ff
+                0x00003184        0x5 C:\Users\Emilie1\Documents\MCUXpressoIDE_10.0.2_411\workspace\lpc_board_ea_devkit_4088\Debug\liblpc_board_ea_devkit_4088.a(board.o)
+ *fill*         0x00003189        0x3 ff
  .rodata.pinmuxing
-                0x00003188       0x88 C:\Users\Emilie1\Documents\MCUXpressoIDE_10.0.2_411\workspace\lpc_board_ea_devkit_4088\Debug\liblpc_board_ea_devkit_4088.a(board_sysinit.o)
+                0x0000318c       0x88 C:\Users\Emilie1\Documents\MCUXpressoIDE_10.0.2_411\workspace\lpc_board_ea_devkit_4088\Debug\liblpc_board_ea_devkit_4088.a(board_sysinit.o)
  .rodata.IS42S32800D_config
-                0x00003210       0x74 C:\Users\Emilie1\Documents\MCUXpressoIDE_10.0.2_411\workspace\lpc_board_ea_devkit_4088\Debug\liblpc_board_ea_devkit_4088.a(board_sysinit.o)
+                0x00003214       0x74 C:\Users\Emilie1\Documents\MCUXpressoIDE_10.0.2_411\workspace\lpc_board_ea_devkit_4088\Debug\liblpc_board_ea_devkit_4088.a(board_sysinit.o)
  .rodata.SST39VF320_config
-                0x00003284       0x20 C:\Users\Emilie1\Documents\MCUXpressoIDE_10.0.2_411\workspace\lpc_board_ea_devkit_4088\Debug\liblpc_board_ea_devkit_4088.a(board_sysinit.o)
+                0x00003288       0x20 C:\Users\Emilie1\Documents\MCUXpressoIDE_10.0.2_411\workspace\lpc_board_ea_devkit_4088\Debug\liblpc_board_ea_devkit_4088.a(board_sysinit.o)
  .rodata.K9F1G_config
-                0x000032a4       0x20 C:\Users\Emilie1\Documents\MCUXpressoIDE_10.0.2_411\workspace\lpc_board_ea_devkit_4088\Debug\liblpc_board_ea_devkit_4088.a(board_sysinit.o)
+                0x000032a8       0x20 C:\Users\Emilie1\Documents\MCUXpressoIDE_10.0.2_411\workspace\lpc_board_ea_devkit_4088\Debug\liblpc_board_ea_devkit_4088.a(board_sysinit.o)
  .rodata.hw_api
-                0x000032c4       0x5c C:\Users\Emilie1\Documents\MCUXpressoIDE_10.0.2_411\workspace\lpc_chip_40xx\libs\libusbd_40xx_lib.a(mw_usbd_rom_api.o)
-                0x000032c4                hw_api
+                0x000032c8       0x5c C:\Users\Emilie1\Documents\MCUXpressoIDE_10.0.2_411\workspace\lpc_chip_40xx\libs\libusbd_40xx_lib.a(mw_usbd_rom_api.o)
+                0x000032c8                hw_api
  .rodata.core_api
-                0x00003320       0x20 C:\Users\Emilie1\Documents\MCUXpressoIDE_10.0.2_411\workspace\lpc_chip_40xx\libs\libusbd_40xx_lib.a(mw_usbd_rom_api.o)
-                0x00003320                core_api
+                0x00003324       0x20 C:\Users\Emilie1\Documents\MCUXpressoIDE_10.0.2_411\workspace\lpc_chip_40xx\libs\libusbd_40xx_lib.a(mw_usbd_rom_api.o)
+                0x00003324                core_api
  .rodata.hid_api
-                0x00003340        0x8 C:\Users\Emilie1\Documents\MCUXpressoIDE_10.0.2_411\workspace\lpc_chip_40xx\libs\libusbd_40xx_lib.a(mw_usbd_rom_api.o)
-                0x00003340                hid_api
+                0x00003344        0x8 C:\Users\Emilie1\Documents\MCUXpressoIDE_10.0.2_411\workspace\lpc_chip_40xx\libs\libusbd_40xx_lib.a(mw_usbd_rom_api.o)
+                0x00003344                hid_api
  .rodata.str1.1
-                0x00003348        0x4 c:/nxp/mcuxpressoide_10.0.2_411/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libcr_c.a(initio.o)
+                0x0000334c        0x4 c:/nxp/mcuxpressoide_10.0.2_411/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libcr_c.a(initio.o)
  .rodata.__num_Ciob_streams
-                0x0000334c        0x4 c:/nxp/mcuxpressoide_10.0.2_411/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libcr_nohost.a(__ciob.o)
-                0x0000334c                __num_Ciob_streams
-                0x00003350                . = ALIGN (0x4)
+                0x00003350        0x4 c:/nxp/mcuxpressoide_10.0.2_411/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libcr_nohost.a(__ciob.o)
+                0x00003350                __num_Ciob_streams
+                0x00003354                . = ALIGN (0x4)
 
-.glue_7         0x00003350        0x0
- .glue_7        0x00003350        0x0 linker stubs
+.glue_7         0x00003354        0x0
+ .glue_7        0x00003354        0x0 linker stubs
 
-.glue_7t        0x00003350        0x0
- .glue_7t       0x00003350        0x0 linker stubs
+.glue_7t        0x00003354        0x0
+ .glue_7t       0x00003354        0x0 linker stubs
 
-.vfp11_veneer   0x00003350        0x0
- .vfp11_veneer  0x00003350        0x0 linker stubs
+.vfp11_veneer   0x00003354        0x0
+ .vfp11_veneer  0x00003354        0x0 linker stubs
 
-.v4_bx          0x00003350        0x0
- .v4_bx         0x00003350        0x0 linker stubs
+.v4_bx          0x00003354        0x0
+ .v4_bx         0x00003354        0x0 linker stubs
 
-.iplt           0x00003350        0x0
- .iplt          0x00003350        0x0 ./example/src/cr_startup_lpc40xx.o
+.iplt           0x00003354        0x0
+ .iplt          0x00003354        0x0 ./example/src/cr_startup_lpc40xx.o
 
-.rel.dyn        0x00003350        0x0
- .rel.iplt      0x00003350        0x0 ./example/src/cr_startup_lpc40xx.o
+.rel.dyn        0x00003354        0x0
+ .rel.iplt      0x00003354        0x0 ./example/src/cr_startup_lpc40xx.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x00003350                __exidx_start = .
+                0x00003354                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x00003350                __exidx_end = .
-                0x00003350                _etext = .
+                0x00003354                __exidx_end = .
+                0x00003354                _etext = .
 
-.data_RAM2      0x20000000        0x0 load address 0x00003350
+.data_RAM2      0x20000000        0x0 load address 0x00003354
  FILL mask 0xff
                 [!provide]                PROVIDE (__start_data_RAM2, .)
  *(.ramfunc.$RAM2)
@@ -2899,7 +2899,7 @@ END GROUP
                 0x10000000                . = ALIGN (0x4)
                 0x10000000                _end_uninit_RESERVED = .
 
-.data           0x10000000       0x28 load address 0x00003350
+.data           0x10000000       0x28 load address 0x00003354
  FILL mask 0xff
                 0x10000000                _data = .
  *(vtable)
@@ -2915,7 +2915,7 @@ END GROUP
                 0x10000028                . = ALIGN (0x4)
                 0x10000028                _edata = .
 
-.igot.plt       0x10000028        0x0 load address 0x00003378
+.igot.plt       0x10000028        0x0 load address 0x0000337c
  .igot.plt      0x10000028        0x0 ./example/src/cr_startup_lpc40xx.o
 
 .bss_RAM2       0x20000000        0x0
@@ -3130,32 +3130,32 @@ OUTPUT(usbd_lib_hid_mouse_ISD_EXERCISE.axf elf32-littlearm)
  .debug_macro   0x000081df      0x22c C:\Users\Emilie1\Documents\MCUXpressoIDE_10.0.2_411\workspace\lpc_chip_40xx\Debug\liblpc_chip_40xx.a(sysctl_17xx_40xx.o)
  .debug_macro   0x0000840b      0x22c C:\Users\Emilie1\Documents\MCUXpressoIDE_10.0.2_411\workspace\lpc_chip_40xx\Debug\liblpc_chip_40xx.a(sysinit_17xx_40xx.o)
 
-.debug_line     0x00000000     0x5d06
+.debug_line     0x00000000     0x5d13
  .debug_line    0x00000000       0xe1 ./example/src/cr_startup_lpc40xx.o
- .debug_line    0x000000e1      0x2e5 ./example/src/hid_desc.o
- .debug_line    0x000003c6      0x7ae ./example/src/hid_main.o
- .debug_line    0x00000b74      0x80a ./example/src/hid_mouse.o
- .debug_line    0x0000137e      0x583 ./example/src/sysinit.o
- .debug_line    0x00001901      0xb7f C:\Users\Emilie1\Documents\MCUXpressoIDE_10.0.2_411\workspace\lpc_board_ea_devkit_4088\Debug\liblpc_board_ea_devkit_4088.a(board.o)
- .debug_line    0x00002480      0x634 C:\Users\Emilie1\Documents\MCUXpressoIDE_10.0.2_411\workspace\lpc_board_ea_devkit_4088\Debug\liblpc_board_ea_devkit_4088.a(board_sysinit.o)
- .debug_line    0x00002ab4      0x4da C:\Users\Emilie1\Documents\MCUXpressoIDE_10.0.2_411\workspace\lpc_chip_40xx\Debug\liblpc_chip_40xx.a(chip_17xx_40xx.o)
- .debug_line    0x00002f8e      0x79a C:\Users\Emilie1\Documents\MCUXpressoIDE_10.0.2_411\workspace\lpc_chip_40xx\Debug\liblpc_chip_40xx.a(clock_17xx_40xx.o)
- .debug_line    0x00003728      0x653 C:\Users\Emilie1\Documents\MCUXpressoIDE_10.0.2_411\workspace\lpc_chip_40xx\Debug\liblpc_chip_40xx.a(emc_17xx_40xx.o)
- .debug_line    0x00003d7b      0x1fc C:\Users\Emilie1\Documents\MCUXpressoIDE_10.0.2_411\workspace\lpc_chip_40xx\Debug\liblpc_chip_40xx.a(fpu_init.o)
- .debug_line    0x00003f77      0x4cd C:\Users\Emilie1\Documents\MCUXpressoIDE_10.0.2_411\workspace\lpc_chip_40xx\Debug\liblpc_chip_40xx.a(iocon_17xx_40xx.o)
- .debug_line    0x00004444      0x4bf C:\Users\Emilie1\Documents\MCUXpressoIDE_10.0.2_411\workspace\lpc_chip_40xx\Debug\liblpc_chip_40xx.a(sysctl_17xx_40xx.o)
- .debug_line    0x00004903      0x569 C:\Users\Emilie1\Documents\MCUXpressoIDE_10.0.2_411\workspace\lpc_chip_40xx\Debug\liblpc_chip_40xx.a(sysinit_17xx_40xx.o)
- .debug_line    0x00004e6c      0x192 C:\Users\Emilie1\Documents\MCUXpressoIDE_10.0.2_411\workspace\lpc_chip_40xx\libs\libusbd_40xx_lib.a(mw_usbd_rom_api.o)
- .debug_line    0x00004ffe      0x545 C:\Users\Emilie1\Documents\MCUXpressoIDE_10.0.2_411\workspace\lpc_chip_40xx\libs\libusbd_40xx_lib.a(hw_usbd_ip3503.o)
- .debug_line    0x00005543      0x4b9 C:\Users\Emilie1\Documents\MCUXpressoIDE_10.0.2_411\workspace\lpc_chip_40xx\libs\libusbd_40xx_lib.a(mw_usbd_core.o)
- .debug_line    0x000059fc      0x30a C:\Users\Emilie1\Documents\MCUXpressoIDE_10.0.2_411\workspace\lpc_chip_40xx\libs\libusbd_40xx_lib.a(mw_usbd_hiduser.o)
+ .debug_line    0x000000e1      0x2f2 ./example/src/hid_desc.o
+ .debug_line    0x000003d3      0x7ae ./example/src/hid_main.o
+ .debug_line    0x00000b81      0x80a ./example/src/hid_mouse.o
+ .debug_line    0x0000138b      0x583 ./example/src/sysinit.o
+ .debug_line    0x0000190e      0xb7f C:\Users\Emilie1\Documents\MCUXpressoIDE_10.0.2_411\workspace\lpc_board_ea_devkit_4088\Debug\liblpc_board_ea_devkit_4088.a(board.o)
+ .debug_line    0x0000248d      0x634 C:\Users\Emilie1\Documents\MCUXpressoIDE_10.0.2_411\workspace\lpc_board_ea_devkit_4088\Debug\liblpc_board_ea_devkit_4088.a(board_sysinit.o)
+ .debug_line    0x00002ac1      0x4da C:\Users\Emilie1\Documents\MCUXpressoIDE_10.0.2_411\workspace\lpc_chip_40xx\Debug\liblpc_chip_40xx.a(chip_17xx_40xx.o)
+ .debug_line    0x00002f9b      0x79a C:\Users\Emilie1\Documents\MCUXpressoIDE_10.0.2_411\workspace\lpc_chip_40xx\Debug\liblpc_chip_40xx.a(clock_17xx_40xx.o)
+ .debug_line    0x00003735      0x653 C:\Users\Emilie1\Documents\MCUXpressoIDE_10.0.2_411\workspace\lpc_chip_40xx\Debug\liblpc_chip_40xx.a(emc_17xx_40xx.o)
+ .debug_line    0x00003d88      0x1fc C:\Users\Emilie1\Documents\MCUXpressoIDE_10.0.2_411\workspace\lpc_chip_40xx\Debug\liblpc_chip_40xx.a(fpu_init.o)
+ .debug_line    0x00003f84      0x4cd C:\Users\Emilie1\Documents\MCUXpressoIDE_10.0.2_411\workspace\lpc_chip_40xx\Debug\liblpc_chip_40xx.a(iocon_17xx_40xx.o)
+ .debug_line    0x00004451      0x4bf C:\Users\Emilie1\Documents\MCUXpressoIDE_10.0.2_411\workspace\lpc_chip_40xx\Debug\liblpc_chip_40xx.a(sysctl_17xx_40xx.o)
+ .debug_line    0x00004910      0x569 C:\Users\Emilie1\Documents\MCUXpressoIDE_10.0.2_411\workspace\lpc_chip_40xx\Debug\liblpc_chip_40xx.a(sysinit_17xx_40xx.o)
+ .debug_line    0x00004e79      0x192 C:\Users\Emilie1\Documents\MCUXpressoIDE_10.0.2_411\workspace\lpc_chip_40xx\libs\libusbd_40xx_lib.a(mw_usbd_rom_api.o)
+ .debug_line    0x0000500b      0x545 C:\Users\Emilie1\Documents\MCUXpressoIDE_10.0.2_411\workspace\lpc_chip_40xx\libs\libusbd_40xx_lib.a(hw_usbd_ip3503.o)
+ .debug_line    0x00005550      0x4b9 C:\Users\Emilie1\Documents\MCUXpressoIDE_10.0.2_411\workspace\lpc_chip_40xx\libs\libusbd_40xx_lib.a(mw_usbd_core.o)
+ .debug_line    0x00005a09      0x30a C:\Users\Emilie1\Documents\MCUXpressoIDE_10.0.2_411\workspace\lpc_chip_40xx\libs\libusbd_40xx_lib.a(mw_usbd_hiduser.o)
 
 .debug_str      0x00000000    0x1ff3d
  .debug_str     0x00000000     0x272f ./example/src/cr_startup_lpc40xx.o
                                0x2742 (size before relaxing)
- .debug_str     0x0000272f     0x5644 ./example/src/hid_desc.o
-                               0x7c33 (size before relaxing)
- .debug_str     0x00007d73    0x144fb ./example/src/hid_main.o
+ .debug_str     0x0000272f     0x56a8 ./example/src/hid_desc.o
+                               0x7c40 (size before relaxing)
+ .debug_str     0x00007dd7    0x14497 ./example/src/hid_main.o
                               0x1c390 (size before relaxing)
  .debug_str     0x0001c26e      0x40c ./example/src/hid_mouse.o
                               0x1c3f4 (size before relaxing)

@@ -172,21 +172,23 @@ const uint8_t USB_StringDescriptor[] = {
 	'r', 0,
 	's', 0,
 	/* Index 0x02: Product */
-	(13 * 2 + 2),					/* bLength (13 Char + Type + lenght) */
+	(15 * 2 + 2),					/* bLength (13 Char + Type + lenght) */
 	USB_STRING_DESCRIPTOR_TYPE,		/* bDescriptorType */
-	'L', 0,
-	'P', 0,
-	'C', 0,
-	'1', 0,
-	'1', 0,
-	'U', 0,
-	'x', 0,
+	'I', 0,
+	'S', 0,
+	'D', 0,
+	'2', 0,
 	' ', 0,
 	'M', 0,
-	'O', 0,
-	'U', 0,
-	'S', 0,
-	'E', 0,
+	'o', 0,
+	'u', 0,
+	's', 0,
+	'e', 0,
+	' ', 0,
+	'D', 0,
+	'e', 0,
+	'm', 0,
+	'o', 0,
 	/* Index 0x03: Serial Number */
 	(13 * 2 + 2),					/* bLength (13 Char + Type + lenght) */
 	USB_STRING_DESCRIPTOR_TYPE,		/* bDescriptorType */

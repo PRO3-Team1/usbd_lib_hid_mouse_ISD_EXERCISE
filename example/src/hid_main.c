@@ -71,7 +71,7 @@ static void usb_pin_clk_init(void)
 	/* enable USB PLL and clocks */
 	Chip_USB_Init();
 	/* enable USB 1 port on the board */
-	Board_USBD_Init(1);
+	Board_USBD_Init(2);
 }
 
 /*****************************************************************************
